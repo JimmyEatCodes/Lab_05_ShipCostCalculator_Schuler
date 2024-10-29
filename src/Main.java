@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
 
         Scanner console = new Scanner(System.in);
@@ -35,15 +34,16 @@ public class Main {
                 totalCost = itemPrice + shipCost;
 
             }
-            System.out.println("The ship cost is" + shipCost);
-            System.out.println("The total cost is" + totalCost);
+            System.out.println("The ship cost is " + shipCost);
+            System.out.println("The total cost is " + totalCost);
 
 
         } else // clearing the trash, non applicible value
         {
 
             trash = console.nextLine();
-            System.out.print("You entered" + trash + "not a number");
+            System.out.println("You entered " + trash + " not a number, ");
+
             System.out.println("Run the program again with the correct input");
 
         }
